@@ -1,0 +1,100 @@
+/* Reset and global styles */
+.carousel-inner {
+  height: 800px; /* Default height */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; /* For absolute positioning of overlay */
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-item {
+  transition: opacity 3s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+}
+
+.carousel-item .zoom {
+  animation: zoom-out-animation 10s infinite;
+}
+
+@keyframes zoom-out-animation {
+  0% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  color: rgb(0, 0, 0);
+  width: 25%; /* Adjust width as needed */
+  padding: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  box-sizing: border-box;
+  text-align: left; /* Center text */
+}
+
+/* Adjust font sizes and padding for responsiveness */
+.content h1 {
+  font-family: "Arbutus", sans-serif;
+  font-size: 2em; /* Default font size for larger screens */
+}
+
+.content p {
+  font-size: 1.2em; /* Default font size for larger screens */
+  line-height: 1.5em;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .content {
+      width: 25%;
+      padding: 15px;
+  }
+
+  .content h1 {
+      font-size: 1.5em; /* Adjust font size for tablets */
+  }
+
+  .content p {
+      font-size: 0.9em; /* Adjust font size for tablets */
+      line-height: 1.4em;
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .content {
+      width: 80%;
+      padding: 10px;
+      left: 50%;
+      margin: auto;
+  }
+
+  .content h1 {
+      font-size: 1.2em; /* Adjust font size for mobile */
+  }
+
+  .content p {
+      font-size: 0.8em; /* Adjust font size for mobile */
+      line-height: 1.3em;
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+    background-color: #025702; 
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+    text-decoration: none; 
+    color: #fff;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(4, 226, 4);
+}
+
+.footer-section p.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section p.footer a:hover {
+    color: rgb(4, 226, 4);
+}
+
+.footer-bottom {
+    background-color: #014401; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-section a i {
+    cursor: pointer;
+    font-size: 15px;
+   color: #fff;
+}
+
+.footer-section i:hover {
+    background-color: aqua;
+}
+
+.footer-section i.fa-twitter {
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.footer-section i.fa-youtube {
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.footer-section i.fa-facebook {
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.footer-section i.fa-instagram {
+    background-color: rgb(255, 0, 85);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.footer-section i.fa-linkedin {
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}

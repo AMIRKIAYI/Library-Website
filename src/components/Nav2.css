@@ -1,0 +1,151 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    max-width: 1900px;
+    margin: 0 auto; /* Center container */
+    position: relative;
+}
+
+/* Adjusted logo image styles */
+.logo-image {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* Remove margin for better alignment */
+    padding-top: 10px;
+}
+
+/* Adjust space between logo and menu toggle icon */
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px; /* Adjust spacing here */
+}
+
+/* Menu styles */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu a {
+    color: black;
+    text-decoration: none;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(219, 217, 217, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #04dd04;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    text-decoration: underline;
+    color: #04dd04;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    .logo-image{
+        width: 300px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjusted to ensure the menu does not overlap the logo */
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(219, 217, 217, 0.2);
+        z-index: 2;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .navbar-menu.open {
+        max-height: 500px; /* Adjust height based on content */
+    }
+
+    .navbar-menu a {
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background-color: #ffffff;
+        box-shadow: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        max-height: 500px; /* Adjust height based on content */
+    }
+}

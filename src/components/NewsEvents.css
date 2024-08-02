@@ -1,0 +1,98 @@
+.main {
+  background-color: #e7e4e4;
+}
+
+.textOverlay h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+  background-color: #088000;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Container Styles */
+.container12, .container13, .container14, .container15 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.container12 img, .container13 img, .container14 img, .container15 img {
+  height: 50%;
+  border-radius: 10px;
+}
+
+.container12 h1, .container13 h1, .container14 h1, .container15 h1 {
+  color: #000;
+  font-size: 25px;
+  font-family: "Rubik", sans-serif;
+}
+
+.container12 p, .container13 p, .container14 p, .container15 p {
+  color: #000;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Button Styles */
+.toBtn {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  width: 130px;
+  height: 50px;
+  position: relative;
+  margin-left: auto; /* Center button on smaller screens */
+  margin-right: auto;
+  display: block; /* Ensure the button is a block-level element */
+  text-align: center; /* Center text within the button */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container12, .container13, .container14, .container15 {
+      width: 95%;
+      margin-top: 20px;
+  }
+
+  .container12 h1, .container13 h1, .container14 h1, .container15 h1 {
+      font-size: 22px;
+  }
+
+  .container12 p, .container13 p, .container14 p, .container15 p {
+      font-size: 18px;
+  }
+
+  .toBtn {
+      width: 120px;
+      height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container12, .container13, .container14, .container15 {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .container12 h1, .container13 h1, .container14 h1, .container15 h1 {
+      font-size: 18px;
+  }
+
+  .container12 p, .container13 p, .container14 p, .container15 p {
+      font-size: 16px;
+  }
+
+  .toBtn {
+      width: 100px;
+      height: 35px;
+  }
+}

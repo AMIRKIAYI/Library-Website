@@ -1,0 +1,19 @@
+
+  
+  .logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    height: 50px; /* Adjust the size as needed */
+    width: auto;
+  }
+  
+  .title1 {
+    margin-top: 20px; /* Add some space between the logo and the title */
+    /* existing styles */
+  }
+  

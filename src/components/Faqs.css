@@ -1,0 +1,29 @@
+.question {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+   margin: auto;
+    width: 85%;
+  
+    margin-top: 30px;
+  }
+  .question p{
+    text-align: left;
+    
+  }
+  
+ .question h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+    background-color: #088000;
+    width: 100%;
+    text-align: center;
+   
+  }
+  .question h2{
+    text-align: center;
+  }

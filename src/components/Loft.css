@@ -1,0 +1,94 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(2, 87, 2);
+    padding: 20px; /* Adjust padding as needed */
+    height: 700px;
+}
+
+.myLofta {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to match your design */
+    padding-right: 0;
+}
+
+.myLoftb {
+    width: 45%; /* Adjust width as needed */
+    color: white;
+    text-align: left;
+    padding: 20px; /* Add padding to match your design */
+    padding-left: 0;
+    padding-top: 50px;
+    font-size: 19px;
+    line-height: 30px;
+    font-family: Rubik, sans-serif;
+}
+
+.myLoftb p {
+    padding-top: 20px;
+}
+
+.myLofta img {
+    width: 100%; /* Adjust image width as needed */
+    border-radius: 10px;
+}
+
+.store {
+    display: inline-flex;
+    background-color: rgb(2, 87, 2);
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.store a img {
+    width: 70%; /* Adjust image width as needed */
+    border-radius: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .all {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .myLofta, .myLoftb {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .myLoftb {
+        padding-top: 20px;
+    }
+
+    .store {
+        justify-content: center;
+    }
+
+    .store a img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .myLoftb {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .store a img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .myLoftb {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .store a img {
+        width: 70%;
+    }
+}

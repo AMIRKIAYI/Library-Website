@@ -1,0 +1,73 @@
+.mainContainer {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnFZ4e8peGpRkWRbKCT_tV9xg4KDt2eQxWCg&s");
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.searchBooks {
+  background-color: #fff;
+  width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.searchHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.searchBooks p {
+  text-align: left;
+  margin: 0;
+}
+
+.searchBooks h1 {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+}
+
+.toButton {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin: auto;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Right padding for the icon */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background-color: #f0ecec;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 20px;
+  color: #008000;
+  pointer-events: none; /* Allows clicks to pass through the icon */
+}
+
+.databasesContainer h1 {
+  padding: 10px;
+}

@@ -1,0 +1,37 @@
+.newContainer {
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .newContainer h1 {
+    margin-bottom: 20px;
+    background-color: #008000;
+    color: #fff;
+    padding: 10px;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+  }
+  
+  .newContainer p {
+    margin-bottom: 20px;
+  }
+  
+  .videoContainer {
+    display: flex;
+    
+  }
+  
+  iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,112 @@
+.repo {
+  position: relative;
+  background-color: #e0dddd;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+}
+
+.repo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay-text h1 {
+  text-align: left;
+  font-weight: bold;
+}
+
+.input-group {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  height: 70px;
+}
+
+.input-group-text {
+  border-radius: 30px;
+  margin-left: -25px;
+  width: 95px;
+  padding-right: 16px;
+  padding-left: 45px;
+  background-color: #008000;
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.comm {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.comm h1 {
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  background-color: #008000;
+}
+
+.comm p {
+  text-align: left;
+  padding-left: 25px;
+  font-size: 20px;
+}
+
+.repo .paragraph a {
+  text-decoration: none; /* Remove underline from links */
+  color: #003c80; /* Ensure links inherit the text color */
+}
+
+.repo .paragraph a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.comm h2 {
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  text-align: left;
+  color: #008000;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.recent-submissions .submission {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.recent-submissions .submission img {
+  max-width: 150px;
+  height: auto;
+  margin-left: 10px;
+}
+
+.recent-submissions .submission .submission-text {
+  flex: 1;
+}
+

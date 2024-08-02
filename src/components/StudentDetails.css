@@ -1,0 +1,94 @@
+/* Styles for the StudentDetails page */
+.tabl {
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.detailsTable, .detailsTable2 {
+  width: 90%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.tabl h1 {
+  font-weight: 800;
+  padding-top: 20px;
+  color: #333; /* Darker color for better readability */
+}
+
+.tabl h2 {
+  font-weight: 600;
+  padding-top: 40px;
+  color: #333; /* Darker color for better readability */
+}
+
+.detailsTable th, .detailsTable td, .detailsTable2 th, .detailsTable2 td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.detailsTable th, .detailsTable2 th {
+  background-color: #008000;
+  color: #fff;
+}
+
+.detailsTable tr:nth-child(even), .detailsTable2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.detailsTable tr:hover, .detailsTable2 tr:hover {
+  background-color: #ddd;
+}
+
+/* Styles for the form */
+.quickform{
+  width: 60%;
+  margin: auto;
+}
+form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ddd7d7;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input[type="text"], 
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #006400;
+}
