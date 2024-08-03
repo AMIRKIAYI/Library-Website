@@ -17,17 +17,16 @@ body {
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     max-width: 1900px;
-    margin: 0 auto; /* Center container */
+    margin: 0 auto;
     position: relative;
 }
 
 /* Adjusted logo image styles */
 .logo-image {
-    width: 400px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 0; /* Remove margin for better alignment */
+    width: 400px;
+    height: auto;
+    margin-left: 0;
     padding-top: 10px;
 }
 
@@ -38,7 +37,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 20px; /* Adjust spacing here */
+    margin-left: 20px;
 }
 
 /* Menu styles */
@@ -51,7 +50,7 @@ body {
     color: black;
     text-decoration: none;
     line-height: 1.5em;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .dropdown {
@@ -101,9 +100,10 @@ body {
 /* Responsive styles */
 @media screen and (max-width: 768px) {
 
-    .logo-image{
+    .logo-image {
         width: 300px;
     }
+
     .menu-toggle {
         display: block;
     }
@@ -113,7 +113,7 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Adjusted to ensure the menu does not overlap the logo */
+        top: 60px;
         left: 0;
         background-color: #ffffff;
         box-shadow: 0px 8px 16px rgba(219, 217, 217, 0.2);
@@ -124,7 +124,7 @@ body {
     }
 
     .navbar-menu.open {
-        max-height: 500px; /* Adjust height based on content */
+        max-height: 500px;
     }
 
     .navbar-menu a {
@@ -146,6 +146,6 @@ body {
 
     .dropdown:hover .dropdown-content {
         display: block;
-        max-height: 500px; /* Adjust height based on content */
+        max-height: 500px;
     }
 }

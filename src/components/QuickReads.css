@@ -109,3 +109,37 @@
     font-size: 20px;
     font-family: "Arbutus", sans-serif;
   }
+
+
+
+
+
+  .searchContainer1 {
+    display: flex;
+    border-radius: 20px;
+    background-color: #a7e9a7;
+    margin: 20px 0;
+    width: 80%;
+  }
+  
+  .searchParagraph1 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  
+  .searchInput1 {
+    width: 40%;
+    padding: 10px;
+    
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f1eeee;
+    transition: border-color 0.3s ease;
+  }
+  
+  .searchInput1:focus {
+    border-color: #008000;
+  }

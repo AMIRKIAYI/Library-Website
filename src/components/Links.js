@@ -17,10 +17,10 @@ function Links() {
                 <Link to="/e-resources">
                     <img src={image2} alt="Electronic resources" />
                 </Link>
-                <Link to="/quickreads">
+                <Link to="..">
                     <img src={image3} alt="Library gallery" />
                 </Link>
-                <Link to="/e-resources">
+                <Link to="/quickreads">
                     <img src={image4} alt="New books" />
                 </Link>
             </div>

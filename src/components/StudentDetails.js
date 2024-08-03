@@ -14,7 +14,7 @@ function StudentDetails() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:3000/details')
+    fetch('http://localhost:3000/details') 
       .then(response => response.json())
       .then(data => {
         const storedReturnedBooks = JSON.parse(localStorage.getItem('returnedBooks')) || [];
@@ -61,7 +61,7 @@ function StudentDetails() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();                     ////CREATE POST
     fetch('http://localhost:3000/items', {
       method: 'POST',
       headers: {

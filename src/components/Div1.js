@@ -6,12 +6,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 function Div1() {
     useEffect(() => {
         const carousel = document.querySelector('#carouselExampleControls');
-        const carouselInstance = new window.bootstrap.Carousel(carousel);
+        // This line initializes a new instance of the Bootstrap carousel using the selected element. 😃😃😃😃.."window.bootstrap.Carousel" is the Bootstrap JavaScript constructor for the carousel.
+        const carouselInstance = new window.bootstrap.Carousel(carousel);               
 
-        // Example: Slide to the next item every 3 seconds
+        // set the sliding interval😂😂😂😂😂😂😂
         const intervalId = setInterval(() => {
             carouselInstance.next();
-        }, 7000);
+        }, 7000);// Slide to the next item every 7 seconds✋✋✋✋
 
         return () => {
             clearInterval(intervalId);

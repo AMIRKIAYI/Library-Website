@@ -41,7 +41,7 @@ function Nav2() {
                     </div>
                     <Link to="/ask-librarian"><strong>Ask Librarian</strong></Link>
                     <Link to="/faqs"><strong>FAQs</strong></Link>
-                    <Link to="/stafflogin"><strong>Staff</strong></Link>
+                   
                 </div>
             </div>
         </nav>
